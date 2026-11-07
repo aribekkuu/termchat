@@ -22,8 +22,8 @@ You start the server and chat from its console as the host. Everyone else joins 
 ## Quick start
 
 ```bash
-git clone https://github.com/aribekkuu/whatsup-python.git
-cd whatsup-python
+git clone https://github.com/aribekkuu/termchat.git
+cd termchat
 uv run termchat
 ```
 
