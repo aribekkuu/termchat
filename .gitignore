@@ -1,0 +1,16 @@
+# TLS certificate and private key — never commit these
+*.pem
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+*.egg-info/
+build/
+dist/
+
+# Tools
+.pytest_cache/
+.DS_Store
+
+

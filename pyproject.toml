@@ -1,0 +1,23 @@
+[project]
+name = "termchat"
+version = "1.0.0"
+description = "Multi-user terminal chat that anyone can join with nc or openssl"
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "MIT" }
+authors = [{ name = "Alibek Zhazit" }]
+dependencies = []   # standard library only
+
+[project.scripts]
+termchat = "termchat.__main__:main"
+
+[dependency-groups]
+dev = ["pytest>=8"]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["src"]   # tests import termchat straight from src/, even if it isn't installed
